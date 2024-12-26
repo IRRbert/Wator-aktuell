@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WATOR Simulation, V.5, Versuche. 2</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="no-select"></body>
+<script src="https://cdn.jsdelivr.net/npm/winbox@0.2.82/dist/winbox.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+<script src="winbox_functions.js"></script>
+
+<script src="classMENU.js"></script>
+
+<script src="x_irr_funktionen.js"></script>
+<script src="classSzene-Wiese.js"></script>
+<script src="classSimulation_ui.js"></script>
+<script>
+    meine_szene = new classSzene();
+    meine_szene.animate();
+    SimulationEinstellungen = new classSimulation_ui(); // Globalen Zugriff auf otto sicherstellen
+</script>
+<script src="classSprache.js"></script>
+
+</html>
